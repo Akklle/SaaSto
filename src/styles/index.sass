@@ -1,0 +1,1179 @@
+$b-basic: #FFF8F2
+$c-lightblue: #842626
+$t-dark: #1C0E0D
+$t-dark-blue: #18063C
+$t-orange: #FF553E
+$t-red: #40201E
+$t-light: #404040
+$t-white: #FFFFFF
+
+
+@mixin text-light-28-36
+  font-family: 'Poppins', sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 28px
+  line-height: 36px
+  color: $t-light
+@mixin text-brown-18-36
+  font-size: 18px
+  line-height: 36px
+  font-family: 'Inter', sans-serif
+  color: $t-light
+  opacity: 0.8
+  font-weight: 700
+@mixin text-dark-48-70
+  font-family: 'Poppins', sans-serif
+  font-size: 48px
+  font-weight: 600
+  color: $t-dark-blue
+  line-height: 70px
+
+
+.main
+  max-width: 1920px
+  margin-left: auto
+  margin-right: auto
+  font-family: 'Poppins', sans-serif
+.header
+  background-color: $b-basic
+  &__head
+    align-items: center
+    display: flex
+    max-width: 1400px
+    justify-content: space-around
+    padding-top: 50px
+    margin-left: auto
+    margin-right: auto
+    &-nav
+      @include text-brown-18-36
+      font-family: 'Poppins', sans-serif
+      line-height: 24px
+      color: $t-dark
+      &__link
+        font-size: 18px
+        &:not(:last-child)
+          margin-right: 48px
+    &-auth--link
+      color: $t-orange
+      font-size: 18px
+      margin-right: 36px
+    &-auth-sing
+      font-size: 18px
+      color: $t-white
+      align-items: center
+      padding: 16px 32px
+      gap: 10px
+      background: $t-orange
+      border-radius: 40px
+  &__text
+    background-color: $b-basic
+    z-index: 1
+    &-inf
+      display: flex
+      position: relative
+      justify-content: center
+      &-big
+        position: relative
+        z-index: 3
+        color: $t-dark
+        margin-top: 220px
+        width: 800px
+        font-weight: 700
+        font-size: 64px
+        text-align: center
+        margin-bottom: 24px
+        line-height: 90px
+        &:after
+          content: ""
+          display: block
+          width: 178px
+          height: 191px
+          background: url("../assets/desk.png") no-repeat
+          background-size: 178px
+          position: absolute
+          bottom: -269px
+          left: 705px
+        &:before
+          z-index: -1
+          content: ""
+          display: block
+          width: 356px
+          height: 176px
+          background: url("../assets/client-line.png") no-repeat
+          background-size: 176px
+          position: absolute
+          bottom: -145px
+          left: 15px
+      &-second
+        position: relative
+        opacity: 0.8
+        color: $t-red
+        line-height: 36px
+        text-align: center
+        width: 595px
+        height: 72px
+        font-size: 20px
+        margin-bottom: 92px
+        &:after
+          content: ""
+          display: block
+          width: 160px
+          height: 180px
+          background: url("../assets/alarmClock.png") no-repeat
+          background-size: 160px
+          position: absolute
+          bottom: 152px
+          left: -278px
+        &:before
+          content: ""
+          display: block
+          width: 1695px
+          height: 765px
+          background: url("../assets/lines.png") no-repeat
+          background-size: 1695px
+          position: absolute
+          bottom: -289px
+          left: -437px
+      &-small-white
+        font-size: 18px
+        margin-bottom: 206px
+        color: $t-white
+        display: flex
+        align-items: center
+        padding: 24px 40px
+        gap: 10px
+        height: 76px
+        position: relative
+        background: $t-orange
+        border-radius: 40px
+        &:after
+          content: ""
+          display: block
+          width: 582px
+          height: 582px
+          background: url("../assets/screen2.png") no-repeat
+          background-size: 582px
+          position: absolute
+          bottom: -241px
+          left: 498px
+        &:before
+          content: ""
+          display: block
+          width: 500px
+          height: 500px
+          background: url("../assets/screen1.png") no-repeat
+          background-size: 500px
+          position: absolute
+          bottom: -208px
+          left: -800px
+.page
+  &__count
+    display: flex
+    font-family: 'Poppins', sans-serif
+    font-size: 48px
+    line-height: 64px
+    justify-content: space-around
+    margin: 94px 36% 10px 24%
+    color: $t-dark-blue
+
+  &__count-info
+    display: flex
+    font-family: 'Inter', sans-serif
+    font-size: 18px
+    font-weight: 700
+    line-height: 18px
+    margin-left: 24%
+    margin-right: 36%
+    margin-bottom: 223px
+    opacity: 0.6
+    justify-content: space-around
+  &__function
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &-big
+      @include text-dark-48-70
+      margin-bottom: 20px
+      width: 784px
+      text-transform: capitalize
+      position: relative
+      &:after
+        content: ""
+        display: block
+        width: 164px
+        height: 141px
+        background: url("../assets/vector23.png") no-repeat
+        background-size: 141px
+        position: absolute
+        bottom: 44px
+        left: -460px
+      &:before
+        z-index: -1
+        content: ""
+        display: block
+        width: 356px
+        height: 176px
+        background: url("../assets/client-line.png") no-repeat
+        background-size: 176px
+        position: absolute
+        top: 35px
+        left: 380px
+    &-small
+      font-family: 'Inter', sans-serif
+      font-style: normal
+      width: 659px
+      height: 72px
+      font-size: 18px
+      text-align: center
+      color: $t-light
+      font-weight: 700
+      line-height: 36px
+      opacity: 0.8
+      margin-bottom: 64px
+      position: relative
+      &:before
+        z-index: -1
+        content: ""
+        display: block
+        width: 197px
+        height: 183px
+        background: url("../assets/rocket.png") no-repeat
+        background-size: 176px
+        position: absolute
+        bottom: 0
+        right: -249px
+  &__box
+    &-inf
+      display: flex
+      font-family: 'Poppins', sans-serif
+      font-size: 28px
+      line-height: 28px
+      font-style: normal
+      justify-content: center
+      margin-bottom: 10px
+      &-blue
+        position: relative
+        width: 369px
+        height: 236px
+        padding: 140px 30px
+        background: #70D0DC
+        box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06)
+        border-radius: 48px
+        color: $t-white
+        margin-right: 1.67%
+        margin-bottom: 77px
+        &:after
+          position: absolute
+          width: 273px
+          height: 52px
+          font-family: 'Inter', sans-serif
+          content: "Make bill payments easily using the wallet app"
+          font-weight: 400
+          display: block
+          font-size: 18px
+          line-height: 26px
+          top: 178px
+          color: $t-white
+        &:before
+          content: ""
+          display: block
+          width: 200px
+          height: 200px
+          background: url("../assets/calendar1.png") no-repeat
+          background-size: cover
+          position: absolute
+          left: -5px
+          top: 0
+      &-pink
+        position: relative
+        width: 369px
+        height: 236px
+        padding: 140px 30px
+        background: #7562E0
+        box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06)
+        border-radius: 48px
+        color: $t-white
+        margin-right: 1.67%
+        margin-bottom: 77px
+        position: relative
+        &:after
+          position: absolute
+          width: 273px
+          height: 52px
+          font-family: 'Inter', sans-serif
+          content: "Make bill payments easily using the wallet app"
+          font-weight: 400
+          display: block
+          font-size: 18px
+          line-height: 26px
+          top: 178px
+          color: $t-white
+        &:before
+          content: ""
+          display: block
+          width: 200px
+          height: 200px
+          background: url("../assets/alarm.png") no-repeat
+          background-size: cover
+          position: absolute
+          left: -5px
+          top: 0
+      &-orange
+        position: relative
+        width: 369px
+        height: 236px
+        padding: 140px 30px
+        background: #FA865F
+        box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06)
+        border-radius: 48px
+        color: $t-white
+        margin-bottom: 77px
+        &:after
+          position: absolute
+          width: 273px
+          height: 52px
+          font-family: 'Inter', sans-serif
+          content: "Make bill payments easily using the wallet app"
+          font-weight: 400
+          display: block
+          font-size: 18px
+          line-height: 26px
+          top: 178px
+          color: $t-white
+        &:before
+          content: ""
+          display: block
+          width: 200px
+          height: 200px
+          background: url("../assets/note.png") no-repeat
+          background-size: cover
+          position: absolute
+          left: -5px
+          top: 0
+
+
+.analytic-page
+  display: flex
+  justify-content: space-between
+  &__img
+    width: 100%
+    height: auto
+    margin-top: 70px
+    align-items: center
+    margin-bottom: 141px
+  &__empty
+    position: relative
+    &:after
+      content: ""
+      display: block
+      width: 87px
+      height: 121px
+      background: url("../assets/vector1.png") no-repeat
+      background-size: 87px
+      position: absolute
+      bottom: 937px
+      left: 228px
+    &:before
+      content: ""
+      display: block
+      width: 147px
+      height: 131px
+      background: url("../assets/vector3.png") no-repeat
+      background-size: 131px
+      position: absolute
+      bottom: 293px
+      left: 840px
+  &__inf
+    flex: 0 0 50%
+    &-big
+      margin-bottom: 140px
+      width: 568px
+      height: 136px
+      @include text-dark-48-70
+      line-height: 68px
+      margin-top: 188px
+      margin-left: 10px
+      position: relative
+      &:before
+        z-index: -1
+        content: ""
+        display: block
+        width: 356px
+        height: 176px
+        background: url("../assets/client-line.png") no-repeat
+        background-size: 176px
+        position: absolute
+        top: 40px
+        left: 240px
+      &:after
+        @include text-brown-18-36
+        position: relative
+        width: 561px
+        height: 72px
+        content: "An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula"
+        display: block
+        top: 20px
+        margin-bottom: 48px
+    &-small
+      @include text-light-28-36
+      flex-direction: column
+
+      &-analytic
+        margin-bottom: 48px
+        margin-left: 12.7%
+        position: relative
+        &:before
+          content: ""
+          display: block
+          width: 88px
+          height: 88px
+          background: url("../assets/img-timer.png") no-repeat
+          background-size: cover
+          position: absolute
+          left: -112px
+          top: 0
+          bottom: 10px
+        &:after
+          width: 300px
+          height: 72px
+          margin-top: 8px
+          display: block
+          @include text-brown-18-36
+          content: "Time Tracking is never been easier. Just let the stopwatch run"
+      &-customizable
+        position: relative
+        margin-bottom: 48px
+        margin-left: 12.7%
+        &:before
+          content: ""
+          display: block
+          width: 88px
+          height: 88px
+          background: url("../assets/dashboard.png") no-repeat
+          background-size: cover
+          position: absolute
+          left: -112px
+          top: 0
+          bottom: 10px
+        &:after
+          width: 300px
+          height: 72px
+          margin-top: 8px
+          display: block
+          @include text-brown-18-36
+          content: "Time Tracking is never been easier. Just let the stopwatch run"
+      &-statistics
+        position: relative
+        margin-left: 12.7%
+        margin-bottom: 189px
+        &:before
+          content: ""
+          display: block
+          width: 88px
+          height: 88px
+          background: url("../assets/calendar.png") no-repeat
+          background-size: cover
+          position: absolute
+          left: -112px
+          top: 0
+          bottom: 10px
+        &:after
+          width: 300px
+          height: 72px
+          margin-top: 8px
+          display: block
+          @include text-brown-18-36
+          content: "Time Tracking is never been easier. Just let the stopwatch run"
+.tracker-page
+  display: inline
+  position: relative
+  &__big-inf
+    position: relative
+    @include text-dark-48-70
+    margin-left: 19.5%
+    margin-top: 140px
+    margin-bottom: 64px
+    &:before
+      z-index: -1
+      content: ""
+      display: block
+      width: 356px
+      height: 176px
+      background: url("../assets/client-line.png") no-repeat
+      background-size: 176px
+      position: absolute
+      top: 35px
+      left: 214px
+    &:after
+      width: 686px
+      height: 72px
+      margin-top: 20px
+      display: block
+      @include text-brown-18-36
+      content: "An enim nullam tempor sapien gravida donec enim ipsum porta justo   congue magna at pretium purus pretium ligula"
+  &__small-inf
+    flex-direction: column
+    margin-left: 28.2%
+    @include text-light-28-36
+    line-height: 52px
+    &-TimeTracking
+      margin-bottom: 64px
+      position: relative
+      &:before
+        content: ""
+        display: block
+        width: 116px
+        height: 116px
+        background: url("../assets/tracking.png") no-repeat
+        background-size: cover
+        position: absolute
+        left: -167px
+        top: 0
+        bottom: 10px
+      &:after
+        width: 300px
+        height: 72px
+        margin-top: 10px
+        display: block
+        @include text-brown-18-36
+        content: "Time Tracking is never been easier. Just let the stopwatch run"
+    &-Expenses
+      margin-bottom: 64px
+      margin-left: 11.2%
+      position: relative
+      &:before
+        content: ""
+        display: block
+        width: 116px
+        height: 116px
+        background: url("../assets/expenses.png") no-repeat
+        background-size: cover
+        position: absolute
+        left: -167px
+        top: 0
+        bottom: 10px
+      &:after
+        width: 300px
+        height: 72px
+        margin-top: 10px
+        display: block
+        @include text-brown-18-36
+        content: "Time Tracking is never been easier. Just let the stopwatch run"
+
+    &-BudgetControlling
+      position: relative
+      margin-bottom: 156px
+      &:before
+        content: ""
+        display: block
+        width: 116px
+        height: 116px
+        background: url("../assets/budget.png") no-repeat
+        background-size: cover
+        position: absolute
+        left: -167px
+        top: 0
+        bottom: 10px
+      &:after
+        width: 300px
+        height: 72px
+        margin-top: 10px
+        display: block
+        @include text-brown-18-36
+        content: "Time Tracking is never been easier. Just let the stopwatch run"
+    &-empty
+      position: relative
+      &:after
+        content: ""
+        z-index: -1
+        display: block
+        width: 210px
+        height: 390px
+        background: url("../assets/darts.png") no-repeat
+        background-size: 210px
+        position: absolute
+        bottom: 18px
+        right: -1380px
+      &:before
+        z-index: -1
+        content: ""
+        display: block
+        width: 200px
+        height: 386px
+        background: url("../assets/notepad.png") no-repeat
+        background-size: 200px
+        position: absolute
+        bottom: -384px
+        left: -540px
+  &__img
+    &-kit1
+      position: absolute
+      left: 57.86%
+      top: 155px
+      filter: drop-shadow(0px 32px 54px rgba(65, 74, 85, 0.05))
+      border-radius: 20px
+      width: 50%
+      max-width: 700px
+      height: auto
+
+
+.flexible-page
+  &__inf
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    display: flex
+
+    &-big
+      @include text-dark-48-70
+      margin-top: 140px
+      text-align: center
+      height: 70px
+      position: relative
+      margin-bottom: 104px
+      &:before
+        z-index: -1
+        content: ""
+        display: block
+        width: 356px
+        height: 176px
+        background: url("../assets/client-line.png") no-repeat
+        background-size: 176px
+        position: absolute
+        top: 40px
+        right: -70px
+      &:after
+        height: 36px
+        margin-top: 10px
+        display: block
+        @include text-brown-18-36
+        content: "Growth your business with using us"
+  &__inf-switch
+    display: flex
+    align-items: center
+    justify-content: center
+    &-monthly
+      margin-right: 20px
+      margin-bottom: 70px
+    &-button
+      margin-right: 20px
+      margin-bottom: 70px
+    &-yearly
+      margin-bottom: 70px
+  &__box
+    justify-content: center
+    margin-bottom: 160px
+    display: flex
+    position: relative
+    &-wight
+      margin-left: 24.75%
+      min-width: 470px
+      width: 470px
+      height: 608px
+      border: 1px solid $t-orange
+      border-radius: 110px
+
+      &:after
+        content: ""
+        display: block
+        width: 340px
+        height: 340px
+        background: url("../assets/hand.png") no-repeat
+        background-size: 225px
+        position: absolute
+        bottom: 53px
+        left: 0
+        z-index: -1
+
+      &-inf
+        margin-top: 64px
+        flex-direction: row
+        &-big
+          @include text-dark-48-70
+          text-align: center
+          line-height: 48px
+          margin-bottom: 56px
+          color: $t-light
+        &-seat
+          text-align: center
+          @include  text-light-28-36
+          line-height: 52px
+          color: $t-orange
+          margin-bottom: 20px
+        &-project
+          text-align: center
+          @include  text-light-28-36
+          line-height: 52px
+          color: $t-orange
+          margin-bottom: 64px
+        &-price
+          margin-left: 38.3%
+          margin-bottom: 64px
+          width: 45px
+          height: 64px
+          font-family: 'Poppins', sans-serif
+          font-weight: 700
+          font-size: 64px
+          line-height: 100%
+          &:after
+            margin-left: 8px
+            @include text-brown-18-36
+            font-weight: 500
+            line-height: 28px
+            content: "/Forever"
+          &:before
+            margin-right: 4px
+            margin-bottom: 40px
+            @include text-brown-18-36
+            font-weight: 500
+            line-height: 28px
+            content: "$"
+        &-button
+          font-size: 18px
+          margin-bottom: 206px
+          margin-left: 24.5%
+          margin-right: 24.5%
+          color: $t-white
+          display: flex
+          align-items: center
+          padding: 24px 40px
+          gap: 10px
+          height: 76px
+          width: 240px
+          background: $t-orange
+          border-radius: 40px
+
+    &-orange
+      margin-left: 1.56%
+      margin-right: 24.75%
+      min-width: 470px
+      width: 470px
+      height: 608px
+      background-color: $t-orange
+      border-radius: 110px
+      position: relative
+      &:after
+        content: ""
+        display: block
+        width: 223px
+        height: 296px
+        background: url("../assets/time.png") no-repeat
+        background-size: 223px
+        position: absolute
+        bottom: 401px
+        left: 379px
+        z-index: -1
+      &:before
+        content: ""
+        display: block
+        width: 136px
+        height: 217px
+        background: url("../assets/vector4.png") no-repeat
+        background-size: 136px
+        position: absolute
+        bottom: 378px
+        left: 496px
+        z-index: -1
+      &-info
+        margin-top: 64px
+        flex-direction: row
+        &-big
+          @include text-dark-48-70
+          text-align: center
+          line-height: 48px
+          margin-bottom: 56px
+          color: $t-white
+        &-seat
+          text-align: center
+          @include  text-light-28-36
+          line-height: 52px
+          color: $t-white
+          margin-bottom: 20px
+        &-project
+          text-align: center
+          @include  text-light-28-36
+          line-height: 52px
+          color: $t-white
+          margin-bottom: 64px
+        &-price
+          margin-left: 38.3%
+          margin-bottom: 64px
+          width: 45px
+          height: 64px
+          color: $t-white
+          font-family: 'Poppins', sans-serif
+          font-weight: 700
+          font-size: 64px
+          line-height: 100%
+          &:after
+            margin-left: 8px
+            font-weight: 500
+            line-height: 28px
+            @include text-brown-18-36
+            color: $t-white
+            content: "/Forever"
+          &:before
+            margin-right: 4px
+            font-weight: 500
+            line-height: 28px
+            margin-bottom: 40px
+            @include text-brown-18-36
+            color: $t-white
+            content: "$"
+        &-button
+          text-align: center
+          font-size: 18px
+          margin-bottom: 206px
+          margin-left: 24.5%
+          margin-right: 24.5%
+          color: $t-orange
+          display: flex
+          align-items: center
+          padding: 24px 40px
+          gap: 10px
+          height: 76px
+          width: 240px
+          background: $t-white
+          border-radius: 40px
+.partners-page
+  display: flex
+  justify-content: center
+  &__img
+    margin-right: 4.69%
+    margin-top: 120px
+    margin-bottom: 120px
+    &-partners
+      width: 100%
+  &__inf
+    flex: 0 0 44%
+    &-big
+      position: relative
+      width: 525px
+      height: 140px
+      @include text-dark-48-70
+      margin-bottom: 204px
+      margin-top: 248px
+      &:before
+        z-index: -1
+        content: ""
+        display: block
+        width: 356px
+        height: 176px
+        background: url("../assets/client-line.png") no-repeat
+        background-size: 176px
+        position: absolute
+        top: 40px
+        left: 160px
+      &:after
+        width: 471px
+        height: 108px
+        margin-top: 24px
+        display: block
+        @include text-brown-18-36
+        content: "Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict altera legimu. Me vita de lege ndos expet end is ad. Ex mei omita aliu mi ando"
+    &-button
+      font-size: 18px
+      color: $t-orange
+      align-items: center
+      padding: 24px 40px
+      gap: 10px
+      height: 76px
+      width: 240px
+      border: 1px solid $t-orange
+      border-radius: 40px
+      margin-bottom: 231px
+.client-page
+  &__inf
+    &-empty-1
+      position: relative
+      &:after
+        content: ""
+        display: block
+        width: 220px
+        height: 225px
+        background: url("../assets/like.png") no-repeat
+        background-size: 220px
+        bottom: 290px
+        left: 56px
+        position: absolute
+      &:before
+        content: ""
+        display: block
+        width: 147px
+        height: 131px
+        background: url("../assets/vector3.png") no-repeat
+        background-size: 115px
+        bottom: 209px
+        left: 213px
+        position: absolute
+    &-empty-2
+      position: relative
+      &:after
+        z-index: -1
+        content: ""
+        display: block
+        width: 298px
+        height: 379px
+        background: url("../assets/ellipse.png") no-repeat
+        background-size: 298px
+        bottom: -179px
+        left: 444px
+        position: absolute
+      &:before
+        content: ""
+        display: block
+        width: 196px
+        height: 200px
+        background: url("../assets/chat.png") no-repeat
+        background-size: 196px
+        bottom: -207px
+        left: 260px
+        position: absolute
+    &-empty-3
+      position: relative
+      &:after
+        content: ""
+        display: block
+        width: 126px
+        height: 123px
+        background: url("../assets/emoji.png") no-repeat
+        background-size: 123px
+        bottom: -210px
+        left: 1660px
+        position: absolute
+      &:before
+        content: ""
+        display: block
+        width: 94px
+        height: 110px
+        background: url("../assets/vector23.png") no-repeat
+        background-size: 94px
+        bottom: -276px
+        left: 1705px
+        position: absolute
+
+    &-big
+      width: 498px
+      height: 70px
+      z-index: 100
+      position: relative
+      margin: 173px auto 181px
+      @include text-dark-48-70
+
+      &:after
+        height: 36px
+        margin-top: 20px
+        display: block
+        text-align: center
+        @include text-brown-18-36
+        content: "Growth your business with using us"
+      &:before
+        z-index: -1
+        content: ""
+        display: block
+        width: 356px
+        height: 176px
+        background: url("../assets/client-line.png") no-repeat
+        background-size: 176px
+        position: absolute
+        right: -90px
+        top: 35px
+    &-small
+      margin-left: 41.3%
+      width: 652px
+      height: 108px
+      font-family: 'Inter', sans-serif
+      font-weight: 600
+      font-size: 20px
+      line-height: 36px
+      opacity: 0.8
+      color: $t-light
+      margin-bottom: 36px
+    &-text
+      margin-left: 41.3%
+      font-family: 'Inter', sans-serif
+      font-weight: 700
+      font-size: 24px
+      line-height: 24px
+      color: #38363C
+      margin-bottom: 286px
+      position: relative
+      &:after
+        margin-top: 16px
+        display: block
+        content: "Designer"
+        font-family: 'Inter', sans-serif
+        font-weight: 600
+        font-size: 18px
+        line-height: 26px
+        color: #38363C
+      &:before
+        content: ""
+        display: block
+        width: 102px
+        height: 12px
+        background: url("../assets/navigator.png") no-repeat
+        background-size: 102px
+        bottom: -40px
+        position: absolute
+.app-page
+  background-color: $b-basic
+  display: flex
+
+  &__body
+    margin-left: 19.5%
+    &-empty1
+      position: relative
+      &:after
+        z-index: 1
+        content: ""
+        display: block
+        width: 400px
+        height: 350px
+        background: url("../assets/hand2.png") no-repeat
+        background-size: 350px
+        bottom: -371px
+        left: -375px
+        position: absolute
+      &:before
+        z-index: 1
+        content: ""
+        display: block
+        width: 400px
+        height: 220px
+        background: url("../assets/hand3.png") no-repeat
+        background-size: 400px
+        bottom: -535px
+        left: 1146px
+        position: absolute
+    &-empty2
+      position: relative
+      &:after
+        z-index: 1
+        content: ""
+        display: block
+        width: 405px
+        height: 600px
+        background: url("../assets/screen3.png") no-repeat
+        background-size: 400px
+        bottom: -702px
+        left: 720px
+        position: absolute
+
+    &-inf
+      margin-top: 248px
+      @include text-dark-48-70
+      margin-bottom: 48px
+      position: relative
+      z-index: 1
+      &:before
+        z-index: -1
+        content: ""
+        display: block
+        width: 356px
+        height: 176px
+        background: url("../assets/client-line.png") no-repeat
+        background-size: 176px
+        position: absolute
+        top: 40px
+        left: 240px
+      &:after
+        width: 529px
+        height: 72px
+        margin-top: 20px
+        display: block
+        @include text-brown-18-36
+        font-size: 20px
+        content: "We are offering free debit cards once you sing up and order a card. we wont chargeyou for our debit card."
+    &-button
+      display: flex
+      margin-bottom: 138px
+      &-app
+        padding: 24px 40px
+        gap: 10px
+        width: 179.52px
+        height: 73.05px
+        background: #FF553E
+        border-radius: 40px
+        position: relative
+      &-google
+        margin-left: 21px
+        padding: 24px 40px
+        gap: 10px
+        width: 195.29px
+        height: 75.3px
+        border: 1px solid #FF553E
+        border-radius: 40px
+.footer
+  &__head
+    @include text-brown-18-36
+    font-family: 'Poppins', sans-serif
+    line-height: 24px
+    color: $t-dark
+    align-items: center
+    display: flex
+    max-width: 1400px
+    justify-content: space-around
+    padding-top: 129px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    margin-bottom: 98px
+    &-coll-instagram
+        margin-right: 48px
+    &-coll-in
+      margin-right: 48px
+    &-coll-facebook
+      margin-right: 48px
+    &:before
+      z-index: -1
+      content: ""
+      display: block
+      width: 1170px
+      height: 1px
+      background: url("../assets/line.png") no-repeat
+      background-size: 1170px
+      position: absolute
+      top: 225px
+      left: 120px
+    &-nav
+      &__link
+        font-size: 18px
+        line-height: 24px
+        color: $t-dark
+        &:not(:last-child)
+          margin-right: 48px
+  &__inf
+    display: flex
+    align-items: center
+    max-width: 1165px
+    margin-left: auto
+    margin-right: auto
+    padding-bottom: 60px
+    @include text-brown-18-36
+    line-height: 24px
+    &-link1
+      margin-right: 9.27%
+    &-link2
+      margin-right: 42.32%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
