@@ -150,13 +150,13 @@
 
 .header__text-inf-small-white:after {
   content: "";
-  width: 582px;
-  height: 582px;
-  background: url("screen2.eb552f30.png") 0 0 / 582px no-repeat;
+  width: 682px;
+  height: 700px;
+  background: url("screen2.eb552f30.png") 0 0 / 700px no-repeat;
   display: block;
   position: absolute;
-  bottom: -241px;
-  left: 498px;
+  bottom: -341px;
+  left: 480px;
 }
 
 .header__text-inf-small-white:before {
@@ -731,25 +731,25 @@
 .tracker-page__small-inf-empty:after {
   content: "";
   z-index: -1;
-  width: 210px;
+  width: 400px;
   height: 390px;
-  background: url("darts.099b993c.png") 0 0 / 210px no-repeat;
+  background: url("darts1.4faa686e.png") 0 0 / 390px no-repeat;
   display: block;
   position: absolute;
   bottom: 18px;
-  right: -1380px;
+  right: -1557px;
 }
 
 .tracker-page__small-inf-empty:before {
   z-index: -1;
   content: "";
-  width: 200px;
+  width: 400px;
   height: 386px;
-  background: url("notepad.82e927a3.png") 0 0 / 200px no-repeat;
+  background: url("notepad.82e927a3.png") 0 0 / 386px no-repeat;
   display: block;
   position: absolute;
   bottom: -384px;
-  left: -540px;
+  left: -700px;
 }
 
 .tracker-page__img-kit1 {
@@ -841,14 +841,14 @@
 
 .flexible-page__box-wight:after {
   content: "";
-  width: 340px;
+  width: 370px;
   height: 340px;
   z-index: -1;
-  background: url("hand.3ebdf0a5.png") 0 0 / 225px no-repeat;
+  background: url("hand.3ebdf0a5.png") 0 0 / 340px no-repeat;
   display: block;
   position: absolute;
   bottom: 53px;
-  left: 0;
+  left: -117px;
 }
 
 .flexible-page__box-wight-inf {
