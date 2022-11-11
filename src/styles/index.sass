@@ -119,6 +119,7 @@ $t-white: #FFFFFF
         height: 72px
         font-size: 20px
         margin-bottom: 92px
+        left: -40px
         &:after
           content: ""
           display: block
@@ -138,7 +139,7 @@ $t-white: #FFFFFF
           background-size: 1695px
           position: absolute
           bottom: -289px
-          left: -437px
+          left: -409px
       &-small-white
         font-size: 18px
         margin-bottom: 206px
@@ -147,6 +148,7 @@ $t-white: #FFFFFF
         align-items: center
         padding: 24px 40px
         gap: 10px
+        left: 20px
         height: 76px
         position: relative
         background: $t-orange
@@ -367,7 +369,9 @@ $t-white: #FFFFFF
     height: auto
     margin-top: 70px
     align-items: center
+    transform: translateX(-900px)
     margin-bottom: 141px
+    z-index: 1
   &__empty
     position: relative
     &:after
@@ -392,6 +396,7 @@ $t-white: #FFFFFF
       left: 840px
   &__inf
     flex: 0 0 50%
+    z-index: -1
     &-big
       margin-bottom: 140px
       width: 568px
@@ -673,6 +678,7 @@ $t-white: #FFFFFF
     display: flex
     position: relative
     &-wight
+      transform: translateX(-950px)
       margin-left: 24.75%
       min-width: 470px
       width: 470px
